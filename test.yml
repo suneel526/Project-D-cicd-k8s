@@ -1,0 +1,13 @@
+---
+- studendDetails: 
+
+   -  name: ramu
+      pho: 8989889
+      emailid: ramu@gmail.com
+      addr: 
+      - dono: 1
+        pin: 500072
+
+   -  name: tiru
+      pho: 8989898
+      emailid: tiru@gmail.com
