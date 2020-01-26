@@ -32,7 +32,6 @@ spec:
   type: NodePort
   ports:
   - port: 8080
-    nodePort: 30001
-    protocol: TCP
+    targetPort: 8080
   selector:
     app: suneel0526/docker-cicd-project
