@@ -16,7 +16,7 @@ spec:
         name: mahaLogin
         ports:
         - name: mahaLogin
-          ContainerPort:8080
+          containerPort:8080
           
 
 
