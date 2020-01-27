@@ -19,7 +19,7 @@ spec:
           ContainerPort:8080
           
 
-# Node port service
+
 
 appVersion: v1
 kind: service
