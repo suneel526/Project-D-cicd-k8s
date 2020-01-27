@@ -1,37 +1,37 @@
-# ReplicationController
-
-apiVersion: v1
+appVersion: v1
 kind: ReplicationController
 metadata:
-  name: mahalogin-1.0
+  lables:
+    name: mahaLogin
+  name: mahaLogin-1.0
 spec:
-  replicas: 2
-  selector:
-    app: suneel0526/docker-cicd-project
+  replicas:
   template:
     metadata:
-      labels:
-        app: suneel0526/docker-cicd-project
-    spec:
+      lables:
+        name: mahaLogin
+    specs:
       containers:
-      - name: mahalogin-1.0
-        image: suneel0526/docker-cicd-project
+      - image: suneel0526/docker-cicd-project
+        name: mahaLogin
         ports:
-        - containerPort: 8080
-
+        - name: mahaLogin
+          containerPort:8080
+          
 ---
 # Node port service
 
-apiVersion: v1
-kind: Service
+appVersion: v1
+kind: service
 metadata:
-  name: mahalogin-1.0
-  labels:
-    app: suneel0526/docker-cicd-project
+  lables:
+    name: mahaLogin
+  name: mahaLogin
 spec:
   type: NodePort
   ports:
-  - port: 8080
-    targetPort: 8080
+    - port: 8080
+      targetPort: 8080
   selector:
-    app: suneel0526/docker-cicd-project
+    name: mahaLogin
+  
