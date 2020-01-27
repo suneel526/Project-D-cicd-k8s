@@ -16,9 +16,9 @@ spec:
         name: mahaLogin
         ports:
         - name: mahaLogin
-          containerPort:8080
+          ContainerPort:8080
           
----
+
 # Node port service
 
 appVersion: v1
